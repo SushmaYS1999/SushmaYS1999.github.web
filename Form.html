@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="Pink">
+        <h1><span style="color: darkblue;">Personal Info</span></h1>
+        <div>
+            <label>Enter First Name</label>
+            <input type="name" name="name" required minlength="2" maxlength="12">
+        </div> 
+        <div>
+            <label>Enter Last Name</label>
+            <input type="name" name="name">
+        </div> 
+        <div>
+            <label>Enter Address</label>
+             <textarea>address</textarea>
+        </div> 
+        <div>
+            <label>Age</label>
+            <input type="number" name="age" min="0" max="100">
+        </div>  
+        <div>
+            <label>Enter a emailId</label>
+            <input type="email" name="email">
+        </div> 
+        <div>
+            <label>Enter a Password</label>
+            <input type="password" name="password" required minlength="8" maxlength="12">
+        </div> 
+        <div>
+            <label>Gender</label>
+            Male<input type="radio" name="Gender" value="Male">
+            Femle<input type="radio" name="Gender" value="Female">
+            others<input type="radio" name="Gender" value="others">
+        </div> 
+    <div>
+        <div>
+            <label>Country</label>
+        <select>
+        <option>India</option>
+        <option>China</option>
+        <option>America</option>
+        <option>USA</option>
+    </select>
+    </div>
+        <div>
+            <label>Enter a City</label>
+        <select>
+        <option>Shimoga</option>
+        <option>Banglore</option>
+        <option>Mysore</option>
+        <option>Manglore</option>
+    </select>
+    </div>
+    <!--dateOfBirth,Mobile number, address-->
+    <div>
+        <label>Select DateOFBirth</label>
+        <input type="date" name="dateOfBirth">
+    </div>
+    <div>
+        <label>Enter Mobile Number</label>
+        <input type="tel" name="mobileNumber" placeholder="+91 8765437654" required minlength="10" maxlength="12">
+    </div>
+    <div>
+        <label>Enter address</label>
+        </textarea row="10" cols="10"></textarea>
+    </div>
+    <div>
+        <label>Select Course</label>
+        <input type="checkbox">Java
+        <input type="checkbox">Python
+        <input type="checkbox">DotNot
+    </div>
+    <!--Naukri website-->
+    <div>
+        <label>Select file/Resume</label>
+        <input type="file" name="uploadFile">
+    </div>
+    <div>
+        <!--<input type="submit">-->
+        <button type="submit">Submit</button>
+        </div>
+</body>
+</html>
