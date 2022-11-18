@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascading</title>
+    <!-- selector {
+        property :value;
+    } -->
+    <!-- Internal CSS-->
+    <!-- */<style>
+        h1,h2{
+            color: darkmagenta;
+            font-size: 50px;
+            text-transform: uppercase;
+            text-decoration:underline;
+            text-decoration-style: dotted;
+            font-style: italic;
+        }
+        .classselector{
+            color:green;
+        }
+        .groupingselector{
+            color: grey;
+        }
+        #header{
+            color: indianred;
+            font-size: 50px;
+        }
+        h3{
+            color: maroon;
+        }/* -->
+        <!-- /*h2{
+            color:darkolivegreen;
+            font-size: 50px;
+            text-transform: uppercase;
+            text-decoration:underline;
+            font-style: italic;
+        }*/ -->
+
+    </style>
+    <link rel="stylesheet" href="simple.css">
+</head>
+<body>
+    <!--reusability-->
+    <h1>Cascading Stylesheet</h1>
+    <h2>Cascading Stylesheet</h2>
+
+    <h1 class="groupingselector">Grouping selector</h1>
+    <h1 class="classselector">Class Selector</h1>
+    <h3 class="classselector" id="header">Id Selector</h3>
+
+    <h1 id="header">Id Selector</h1>
+    <!--  priority  -->
+    <!-- selector {
+        property :value;
+    } -->
+    <!-- 
+    different Selector
+        1.Element selector h1 tag
+        2.Grouping selector:in order to reuse the same property we use grouping selector h1,h2 both the tags
+        3.Class Selector:can create multiple names
+        4.ID Selector:can't create multiple names 
+            <id=""
+        -->
+        <!--
+            types of CSS
+            
+            1.INTERNAL CSS:applaying the properties inside the head style tag called internal css.
+            2.EXTERNAL CSS:creating new file css and applaying all the properties inside that page and link that css file to the html file.
+              through link tag<link rel="stylesheet" href="cas.css">
+            3.INLINE CSS:writing css properties inside the headre tags when we need only one properties we use
+            inline  css tag rearely used eg:<h1 style="color"
+
+        CSS BOX MODEL
+        it will move the text center and along the page,it can be done using the css box model.concept in this are
+        1.Margin
+        2.border
+        3.padding
+        -->
+</body>
+</html>

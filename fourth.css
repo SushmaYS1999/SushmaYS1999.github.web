@@ -1,0 +1,79 @@
+/*desendent selector*/
+div p{
+    color: rgb(235, 12, 205);
+}
+
+/* child selector*/
+div > p {
+    color: rgb(213, 235, 16);
+}
+
+/*adjacent selector*/
+div + p {
+    color: rgb(15, 241, 211);
+}
+
+/*general selector*/
+div ~ p {
+    color: rgb(53, 220, 20);
+}
+
+/*
+color property
+top,bottom,right,left*/
+.static {
+    position: static;
+    left: 20px;
+}
+.relative {
+    left: 0px;
+    top:0px;
+    position: relative;
+    background-color: rgb(226, 126, 230);
+}
+
+
+.absolute {
+    top: 0px;
+    right:800px;
+    color: rgb(231, 17, 213);
+    position: absolute;
+}
+.topleft {
+    position: absolute;
+
+    top: 200px;
+    color: rgb(240, 6, 6);
+    font-size: 20px;
+
+}
+.imageparent {
+    position: relative;
+}
+/*image design*/
+.imagecircle {
+    border-radius: 50px;
+    
+}
+
+/*position fixed*/
+.fixed {
+    position: fixed;
+    top: 0;
+    background-color: lightseagreen;
+}
+.sticky {
+    position: sticky;
+    top:0;
+    background-color: rgb(230, 20, 177);
+}
+ul {
+    list-style-type: none;
+    background-color: moccasin;
+}
+li {
+    padding: 3px;
+    margin: 30px;
+    background-color: orchid
+    ;
+}
