@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script>
+         function add() {
+                let p = document.getElementById("num1")
+                let q = document.getElementById("num2")
+                let r=parseInt(p.value)
+                let s=parseInt(q.value)
+              let w=document.getElementById("add1")
+              w.innerHTML=r+s
+                         
+            }
+
+            function sub() {
+                let p = document.getElementById("num1")
+                let q = document.getElementById("num2")
+                let r=parseInt(p.value)
+                let s=parseInt(q.value)
+                let w=document.getElementById("sub1")
+              w.innerHTML=r-s 
+            }
+
+            function mul() {
+                let p = document.getElementById("num1")
+                let q = document.getElementById("num2")
+                let r=parseInt(p.value)
+                let s=parseInt(q.value)
+                let w=document.getElementById("mul1")
+              w.innerHTML=r*s
+            }
+
+            function div() {
+                let p = document.getElementById("num1")
+                let q = document.getElementById("num2")
+                let r=parseInt(p.value)
+                let s=parseInt(q.value)
+                let w=document.getElementById("div1")
+              w.innerHTML=r/s
+            }
+        
+    </script>
+</head>
+<body bgcolor="cream">
+    
+
+    <center><h1 style="color:blueviolet">OPERATIONS</h1>
+        <form>
+            <div>
+                <label>Enter number1</label>
+                <input type="text" id="num1" placeholder="enter num">
+            </div> <br>
+                
+            <div>
+                <label>Enter number2</label>
+                <input type="text" id="num2" placeholder="enter num">
+            </div><br>
+            <div><button onmouseover="add()" style="color:crimson">addition</button></div><br>
+            <div id="add1"></div><br>
+            <div>
+                <label>Enter number1</label>
+                <input type="text" id="num1" placeholder="enter num">
+            </div> <br>
+                
+            <div>
+                <label>Enter number2</label>
+                <input type="text" id="num2" placeholder="enter num">
+            </div><br>
+            <div><button onmouseover="sub()" style="color:crimson">subtraction</button></div><br>
+            <div id="sub1"></div><br>
+            <div>
+                <label>Enter number1</label>
+                <input type="text" id="num1" placeholder="enter num">
+            </div> <br>
+                
+            <div>
+                <label>Enter number2</label>
+                <input type="text" id="num2" placeholder="enter num">
+            </div><br>
+            <div><button onmouseover="mul()" style="color:crimson">Multiplication</button></div><br>
+            <div id="mul1"></div><br>
+            <div>
+                <label>Enter number1</label>
+                <input type="text" id="num1" placeholder="enter num">
+            </div> <br>
+                
+            <div>
+                <label>Enter number2</label>
+                <input type="text" id="num2" placeholder="enter num">
+            </div><br>
+            <button onmouseover="div()" style="color:crimson">division</button>
+            <div id="div1"></div>
+    
+                
+        </form>
+        </center>
+    
+</body>
+</html>

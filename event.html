@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function displayDate() {
+            console.log("calling displayDate")
+            let message=document.getElementById("message")
+            console.log(message)
+            message.innerHTML = "calling displayDate"
+            message.style.color = "pink"
+        }
+
+            function details() {
+                console.log("calling details")
+              let name = document.getElementById("name")
+              console.log(name)
+              console.log(name.value)
+              let details = document.getElementById("detail")
+              detail.innerHTML = name.value
+            }
+            function add() {
+                let p = document.getElementById("num1")
+                let q = document.getElementById("num2")
+                let r=parseInt(p.value)
+                let s=parseInt(q.value)
+              console.log(r+s) 
+                         
+            }
+
+            function sub() {
+                let p = document.getElementById("num1")
+                let q = document.getElementById("num2")
+                let r=parseInt(p.value)
+                let s=parseInt(q.value)
+              console.log(r-s) 
+            }
+
+            function mul() {
+                let p = document.getElementById("num1")
+                let q = document.getElementById("num2")
+                let r=parseInt(p.value)
+                let s=parseInt(q.value)
+              console.log(r*s) 
+            }
+
+            function div() {
+                let p = document.getElementById("num1")
+                let q = document.getElementById("num2")
+                let r=parseInt(p.value)
+                let s=parseInt(q.value)
+              console.log(r/s) 
+            }
+    
+        
+        
+    </script>
+</head>
+<body>
+    
+    <div id="message"></div>
+    <button onclick="displayDate()">Click Me</button>
+    <h1>India</h1>
+    <button onclick="displayDate()">Player 1</button>
+
+    <form>
+        <div>
+            <label>Enter name</label>
+            <input type="text" id="name">
+        </div>
+            <button onmouseover="details()">Submit</button>
+            <div id="detail"></div>
+    </form>
+
+    <center><h1>OPERATIONS</h1>
+    <form>
+        <div>
+            <label>Enter number1</label>
+            <input type="text" id="num1">
+        </div> <br>
+            
+        <div>
+            <label>Enter number2</label>
+            <input type="text" id="num2">
+        </div><br>
+        <div><button onmouseover="add()">addition</button></div><br>
+        <div>
+            <label>Enter number1</label>
+            <input type="text" id="num1">
+        </div> <br>
+            
+        <div>
+            <label>Enter number2</label>
+            <input type="text" id="num2">
+        </div><br>
+        <div><button onmouseover="sub()">subtraction</button></div><br>
+        <div>
+            <label>Enter number1</label>
+            <input type="text" id="num1">
+        </div> <br>
+            
+        <div>
+            <label>Enter number2</label>
+            <input type="text" id="num2">
+        </div><br>
+        <div><button onmouseover="mul()">Multiplication</button></div><br>
+        <div>
+            <label>Enter number1</label>
+            <input type="text" id="num1">
+        </div> <br>
+            
+        <div>
+            <label>Enter number2</label>
+            <input type="text" id="num2">
+        </div><br>
+        <button onmouseover="div()">division</button>
+
+            
+    </form>
+    </center>
+
+
+    <!-- <h1>Friends</h1>
+    <button onclick="displayDate()">Sushma</button>
+    <button onclick="displayDate()">Sangeetha</button>
+    <button onclick="displayDate()">Sumanth</button>
+    <button onclick="displayDate()">Vaibhavi</button>
+    <button onclick="displayDate()">Akash</button>
+    <button onclick="displayDate()">Vaibhavi</button>
+    <button onclick="displayDate()">Ramya</button>
+    <button onclick="displayDate()">Harshitha</button>
+    <button onclick="displayDate()">Anu</button>
+    <button onclick="displayDate()">Ankush</button>
+    <button onclick="displayDate()">Bharath</button> -->
+
+</body>
+</html>
